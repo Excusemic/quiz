@@ -71,13 +71,15 @@ const Question = ({
   }, [isAnswered, chosenAnswer, currentQuestion, handleAnswer, questions])
   return (
     <div className="question">
-      <h2>{question}</h2>
+      <h2 dangerouslySetInnerHTML={{ __html: question }}></h2>
       <article className="answers" onClick={handleClick} ref={answersRef}>
         {allAnswers.map((elem, index) => {
           return (
-            <div key={index} className="questionText">
-              {elem}
-            </div>
+            <div
+              key={index}
+              className="questionText"
+              dangerouslySetInnerHTML={{ __html: elem }}
+            ></div>
           )
         })}
         <button>Next question</button>
