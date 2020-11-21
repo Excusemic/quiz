@@ -34,6 +34,9 @@ const Game = () => {
               <p className="score">
                 correct: {score}/{results.length}
               </p>
+              <p className="answered">
+                answered: {currentQuestion}/{results.length}
+              </p>
               <Question
                 className="nesto"
                 {...results[currentQuestion]}

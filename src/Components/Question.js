@@ -82,7 +82,7 @@ const Question = ({
             ></div>
           )
         })}
-        <button>Next question</button>
+        <button>Skip question</button>
       </article>
     </div>
   )

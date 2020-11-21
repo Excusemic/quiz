@@ -51,10 +51,7 @@ form input[type="submit"] {
   cursor: pointer;
   transition: 0.2s ease;
 }
-form input[type="submit"]:hover {
-  background-color: rgba(255, 171, 16, 0.733);
-  color: #fff;
-}
+
 form div label {
   margin-bottom: 0.4em;
 }
@@ -94,10 +91,7 @@ form h1 {
   background-color: rgb(148, 212, 255);
   cursor: pointer;
 }
-.answers div:hover {
-  color: #fff;
-  background-color: rgb(0, 131, 218);
-}
+
 .nesto {
   font-size: 55em;
 }
@@ -124,6 +118,7 @@ form h1 {
   text-align: right;
   width: 90%;
   margin: 1em auto;
+  margin-bottom: 0.4em;
 }
 .exit-btn,
 .endscore button,
@@ -138,11 +133,7 @@ form h1 {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.exit-btn:hover,
-.endscore button:hover,
-.invalidParameters button:hover {
-  background-color: rgba(197, 128, 0, 0.801);
-}
+
 .endscore {
   text-align: center;
   padding: 0.8em;
@@ -178,4 +169,28 @@ a {
   margin-top: 6em;
   display: flex;
   flex-direction: column;
+}
+.answers div:focus {
+  color: green;
+}
+.answered {
+  width: 90%;
+  text-align: right;
+  width: 90%;
+  margin: 0em auto;
+}
+@media (hover: hover) {
+  form input[type="submit"]:hover {
+    background-color: rgba(255, 171, 16, 0.733);
+    color: #fff;
+  }
+  .answers div:hover {
+    color: #fff;
+    background-color: rgb(0, 131, 218);
+  }
+  .exit-btn:hover,
+  .endscore button:hover,
+  .invalidParameters button:hover {
+    background-color: rgba(197, 128, 0, 0.801);
+  }
 }
